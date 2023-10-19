@@ -5,8 +5,8 @@ clang string wrapper.
 ```ts
 import { strcpy } from 'https://deno.land/x/cstringh@v0.0.1/mod.ts';
 
-import { puts } from 'https://deno.land/x/cstdio/@0.0.3/mod.ts';
-import { calloc, free } from 'https://deno.land/x/cstdlib/@0.0.3/mod.ts';
+import { puts } from 'https://deno.land/x/cstdio@v0.0.3/mod.ts';
+import { calloc, free } from 'https://deno.land/x/cstdlib@v0.0.3/mod.ts';
 
 const buf = new TextEncoder().encode("あいうえお");
 
