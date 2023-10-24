@@ -1,18 +1,18 @@
 import { load } from "./load_library.js";
 
-function strdup(s: Uint8Array): Deno.PointerValue {
-  const {strdup, library } = load();
+function strerror(errnum: number): Deno.PointerValue {
+  const {strerror, library } = load();
 
   let ptr: Deno.PointerValue<Uint8Array>;
   try{
     // @ts-ignore
-    ptr = strdup(s);
+    ptr = strerror(errnum);
   } finally {
       library.close();
   }
-  return s;
+  return ptr;
 }
 
 export {
-  strdup
+  strerror
 }

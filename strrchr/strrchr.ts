@@ -1,18 +1,18 @@
 import { load } from "./load_library.ts";
 
-function strcpy(s1: Uint8Array, s2: Uint8Array): Deno.PointerValue {
-  const {strcpy, library } = load();
+function strrchr(s: Uint8Array, c: number): Deno.PointerValue {
+  const {strrchr, library } = load();
 
   let ptr: Deno.PointerValue<Uint8Array>;
   try{
     // @ts-ignore
-    ptr = strcpy(s1, s2);
+    s = strrchr(s, c);
   } finally {
       library.close();
   }
-  return ptr;
+  return s;
 }
 
 export {
-  strcpy
+  strrchr
 }

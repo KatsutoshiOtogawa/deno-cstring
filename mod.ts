@@ -1,1 +1,16 @@
+export { strcat } from './strcat/strcat.ts';
+export { strchr } from './strchr/strchr.ts';
+export { strcmp } from './strcmp/strcmp.ts';
+export { strcoll } from './strcoll/strcoll.ts';
 export { strcpy } from './strcpy/strcpy.ts';
+export { strcspn } from './strcspn/strcspn.ts';
+export { strdup } from './strdup/strdup.ts';
+export { strerror } from './strerror/strerror.ts'
+export { strlen } from './strlen/strlen.ts'
+export { strncat } from './strncat/strncat.ts'
+export { strncmp } from './strncmp/strncmp.ts'
+export { strrchr } from './strrchr/strrchr.ts'
+export { strspn } from './strspn/strspn.ts'
+export { strstr } from './strstr/strstr.ts'
+export { strtok } from './strtok/strtok.ts'
+export { strxfrm } from './strxfrm/strxfrm.ts'
